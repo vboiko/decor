@@ -69,12 +69,19 @@ $('#promo').on('click', '#add', function(e) {
 
 //ALERT
     
-  $('#designer').on('click', function() {
-    if($('.alert').length > 0){
-    return true;  
-  }
-  var p = $('<p/>', {text: 'Please complete all fields!', class: 'alert'});
-  $('#status-box').remove();
-  $('.clearfix').after(p);
-});
+//ALERT
+   
+    $('#designer').on('click', function(e) {
+      if ($('#prod').val() === "" || $('#room').val() === "" || $('#color').val() === "" || $('#budget').val() === "") {
+      if($('.alert').length > 0){
+        return true;  
+      }
+      var p = $('<p/>', {text: 'Please complete all fields!', class: 'alert'});
+      $('#status-box').remove();
+      $('.clearfix').after(p);
+      }else{
+        var options = {"backdrop": "true", "keyboard": "true", "show": "true"};
+        $('.bs-example-modal-lg').modal(options);
+      }   
+    });
 });

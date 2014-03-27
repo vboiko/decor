@@ -379,3 +379,6 @@ hr {
 	font-size: 18px;
 	text-transform: uppercase;
 }
+.glyphicon {
+	cursor: pointer;
+}
