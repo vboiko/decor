@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Decorist - Info</title>
+  <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+<div class="container">
+	<div class="hero-unit">
+		<h1 class="title">COMPLETE YOUR ORDER</br>
+		<small><i>Making interior design personal, affordable and easy</i></small></h1>
+	</div>		
+<hr/>
+<div class="wrap-nav text-center clearfix">
+	<div class="one inactive-page nav">
+		<a href="index.html"><span class="round">1</span></a>
+		<span>View Cart</span>
+	</div>
+	<div class="two inactive-page nav">
+		<a href="payment.html"><span class="round">2</span></a>
+		<span>Payment</span>
+	</div>
+	<div class="three nav">
+		<span class="round active-page">3</span>
+		<span>Additional info</span>
+	</div>
+</div>
+<div id="status-box">
+	<h1 id="status-header">CONGRATS! YOUR ORDER HAS BEEN PROCESSED</h1>
+	<p id="status-content"><i>To get your advice please complete the form below. This can be done now or you can return to it later.</i></p>
+</div>
+
+<div class="row-fluid">
+	<section>
+	<div class="info">
+    	<legend class="italic-header"><i>Basic Information</i></legend>
+    </div>
+    	<form id="basic-info" class="form-inline" role="form">
+    	<p>I am looking for a <input id="prod" type="text" maxlength="254" class="form-control input-size" placeholder="product (ex. chair, sofa)" required> for my <input id="room" type="text" maxlength="254" class="form-control input-size-big" placeholder="room (ex. living room, bedroom)" required> in <input id="color" type="text" maxlength="254" class="form-control input-size" placeholder="color or materials" required> and my budget is <input id="budget" type="text" maxlength="254" class="form-control input-size" placeholder="price (ex.$500)" required>.</p>
+    	<p class="add-info">ANY ADDITIONAL INFORMATION SHARE HELPS US GIVE THE BEST RECOMMENDATIONS</p>
+		<textarea id="add-info" class="form-control form" placeholder="Helpful information would be approximate dimensions of the product you're looking for, other items your planning on replacing in your room, materials you prefer, materials or colors you like or do not like, etc." required>
+		</textarea>
+
+		<legend id="photos" class="italic-header"><i>Upload Photos</i></legend>
+		<p class="small-font">The best photos capture the key features of the room (main furniture, layout, room features) from 2 or 3 corners of the room. Capture key colors, textures and patterns that you want to keep.</p>
+	<div id="upload-form">
+		<span class="glyphicon glyphicon-picture"></span><br>
+		DRAG AND DROP PHOTOS HERE<br>
+		OR <label for="files" class="blue-links upload">SELECT FILE TO UPLOAD<input type="file" id="files" class="hidden"></label>
+	</div>
+
+		<legend id="photos" class="italic-header"><i>Additional Information <span class="text-muted">(Optional)</span></i></legend>
+		<p class="add-info">PASTE A URL FOR A PINTEREST BOARD, HOUZZ IDEA BOOK OR OTHER WEBSITE</p>
+		<input type="url" class="form-control input-size-big">
+		<p class="add-info">SHARE ONE OF YOUR DECORIST DESIGN BOARD</p>
+		<button type="button" class="btn btn-primary button blue-links gray">ATTACH DECORIST DESIGN BOARD</button>
+		<div>
+		<p class="pull-right">
+		  <button type="button" class="btn btn-primary button blue-links gray">SAVE DRAFT</button>
+		  <button type="submit button" data-toggle="modal" data-target=".bs-example-modal-lg" class="btn btn-primary button" id="designer">SEND TO DESIGNER</button>
+		</p>
+		</div>
+		</form>
+		</section>
+		<!-- Modal -->
+					<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  						<div class="modal-dialog modal-lg">
+    					<div class="modal-content">
+					      <div class="modal-body">
+					      <p class="title final">THANKS! YOUR PERSONAL SHOPPER WILL START SHOPPING!</p>
+					      <h2 class="popup_header"><i>You will recieve an email with a link to your shopping solution <br> in 5 business days!</i></h2>
+					      <button type="button" class="btn btn-primary btn-block button">SHOP PERSONALIZED FINDS</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+		
+		<aside class="col-sm-4">
+			<img src="img/image-1.png" alt="aside image"/>
+		</aside>
+</div>
+</div>
+<!-- SCRIPTS -->
+<script src="js/libs/jquery.min.js"></script>
+<script src="js/libs/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+<!-- SCRIPTS -->
+</body>
+</html>
